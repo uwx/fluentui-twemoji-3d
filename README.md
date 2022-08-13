@@ -1,4 +1,9 @@
-# Fluent Emoji
+# Fluent Emoji for Twemoji
+This repo contains Fluent Emoji for use with Twemoji libraries.
+See the /export folder for color and flat variants.
+The /converter folder contains the code for converting from the Fluent Emoji to Twemoji format.
+
+# Original README: Fluent Emoji
 
 Fluent Emoji are a collection of familiar, friendly, and modern emoji from Microsoft.
 
