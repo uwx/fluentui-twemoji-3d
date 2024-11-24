@@ -1,5 +1,3 @@
-# Run script to check asset data/metadata for consistency.
-
 name: Generate Twemoji
 
 on:
