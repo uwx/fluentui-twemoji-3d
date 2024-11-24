@@ -3,7 +3,9 @@ import os
 import shutil
 from typing import Any
 
-fluent_emoji_path = '../assets/'
+dir = os.dirname(__file__)
+
+fluent_emoji_path = os.path.join(dir, '..', 'assets')
 
 # Get all emoji folders in ../assets/
 emoji_folders = os.listdir(fluent_emoji_path)
@@ -24,10 +26,10 @@ for emoji_folder in emoji_folders:
 print(list(emoji_data.values())[0])
 
 variants_export_paths = {
-    '3D': '../export/3D_png/',
-    'Color': '../export/color_svg/',
-    'Flat': '../export/flat_svg/',
-    'High Contrast': '../export/highcontrast_svg/',
+    '3D': os.path.join(dir, '../export/3D_png/'),
+    'Color': os.path.join(dir, '../export/color_svg/'),
+    'Flat': os.path.join(dir, '../export/flat_svg/'),
+    'High Contrast': os.path.join(dir, '../export/highcontrast_svg/'),
 }
 
 # Delete previous export first
