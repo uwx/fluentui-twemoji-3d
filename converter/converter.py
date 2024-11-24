@@ -3,7 +3,7 @@ import os
 import shutil
 from typing import Any
 
-dir = os.dirname(__file__)
+dir = os.path.dirname(__file__)
 
 fluent_emoji_path = os.path.join(dir, '..', 'assets')
 
