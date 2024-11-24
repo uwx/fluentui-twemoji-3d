@@ -13,7 +13,7 @@ permissions:
   contents: write
 
 jobs:
-  check_assets:
+  generate-twemoji:
     runs-on: ubuntu-latest
 
     steps:
@@ -33,7 +33,7 @@ jobs:
           UPSTREAM: https://github.com/microsoft/fluentui-emoji
         run: |       
           git config --global user.name "github-actions"
-          git config --global user.email "github-actions@users.noreply.github.com"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           
           # inspired by https://dev.to/ranewallin/how-to-keep-your-forked-repository-current-38mn
           
@@ -48,7 +48,7 @@ jobs:
           git fetch upstream
           
           # Merge the branches and commits from the upstream
-          git merge upstream/main
+          git merge upstream/main --allow-unrelated-histories
                   
           # helpful for debugging
           git show-ref
