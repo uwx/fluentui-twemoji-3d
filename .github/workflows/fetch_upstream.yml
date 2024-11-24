@@ -1,4 +1,4 @@
-name: Generate Twemoji
+name: Fetch upstream
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  generate-twemoji:
+  fetch:
     runs-on: ubuntu-latest
 
     steps:
