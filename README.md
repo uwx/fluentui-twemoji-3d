@@ -1,4 +1,4 @@
-> 3D emoji can be used via `https://cdn.jsdelivr.net/gh/ehne/fluentui-twemoji-3d/export/3D_png/`
+> 3D emoji can be used via `https://cdn.jsdelivr.net/gh/uwx/fluentui-twemoji-3d/export/3D_png/`
 
 # Fluent Emoji for Twemoji
 This repo contains Fluent Emoji for use with Twemoji libraries.
