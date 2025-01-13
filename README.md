@@ -1,4 +1,5 @@
-> 3D emoji can be used via `https://cdn.jsdelivr.net/gh/uwx/fluentui-twemoji-3d/export/3D_png/`
+> 3D emoji can be used via `https://uwx.github.io/fluentui-twemoji-3d/export/3D_png` with size 72x72 and ext '.png' or
+> `https://uwx.github.io/fluentui-twemoji-3d/export/color_svg`, `https://uwx.github.io/fluentui-twemoji-3d/export/flat_svg`, `https://uwx.github.io/fluentui-twemoji-3d/export/highcontrast_svg` with size svg and ext '.svg'
 
 # Fluent Emoji for Twemoji
 This repo contains Fluent Emoji for use with Twemoji libraries.
