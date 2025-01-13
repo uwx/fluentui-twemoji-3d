@@ -33,7 +33,7 @@ jobs:
       - run: git remote -v
 
       # Merge the branches and commits from the upstream
-      - run: git pull upstream main
+      - run: git pull upstream main --allow-unrelated-histories
 
       # helpful for debugging
       - run: git show-ref
