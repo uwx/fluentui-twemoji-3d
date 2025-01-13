@@ -43,19 +43,21 @@ for unicode, data in emoji_data.items():
     emoji_index += 1
 
     for variant in variants_export_paths.keys():
+        extension = '.png' if variant == '3D' else '.svg'
+
         # Define import and export paths, sometimes svg files are in a Default folder
         import_folder_path = os.path.join(fluent_emoji_path, emoji_folders[emoji_index], variant)
         import_folder_path_2nd = os.path.join(fluent_emoji_path, emoji_folders[emoji_index], 'Default', variant)
 
         # Define the normal export file path with the unicode as the file name
-        normal_export_file_path = os.path.join(variants_export_paths[variant], unicode.replace(' ', '-') + '.svg')
+        normal_export_file_path = os.path.join(variants_export_paths[variant], unicode.replace(' ', '-') + extension)
         export_file_paths = [normal_export_file_path]
 
         # If the unicode has a space in it and there is no other emoji with this name, also create a file with the first part only
         if ' ' in unicode:
             first_part = unicode.split(' ')[0]
             if first_part not in emoji_data.keys():
-                export_file_paths.append(os.path.join(variants_export_paths[variant], first_part + '.svg'))
+                export_file_paths.append(os.path.join(variants_export_paths[variant], first_part + extension))
 
         for export_file_path in export_file_paths:
             # Create new export file, if it doesn't exist yet
