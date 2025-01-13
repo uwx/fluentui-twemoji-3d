@@ -31,12 +31,9 @@ jobs:
           
       # Verify upstream is correct, you should see the URL for the upstream fetch and push 
       - run: git remote -v
-          
-      # Get all recent branches and commits from the upstream
-      - run: git fetch upstream
 
       # Merge the branches and commits from the upstream
-      - run: git merge upstream/main --allow-unrelated-histories -s recursive -Xignore-space-at-eol
+      - run: git pull upstream main
 
       # helpful for debugging
       - run: git show-ref
