@@ -26,18 +26,19 @@ jobs:
           
           # If you haven't already added an upstream source, set your upstream
           # to the fork's original source
-          git remote add upstream "https://github.com/microsoft/fluentui-emoji"
+
+      - run: git remote add upstream "https://github.com/microsoft/fluentui-emoji"
           
-          # Verify upstream is correct, you should see the URL for the upstream fetch and push 
-          git remote -v
+      # Verify upstream is correct, you should see the URL for the upstream fetch and push 
+      - run: git remote -v
           
-          # Get all recent branches and commits from the upstream
-          git fetch upstream
+      # Get all recent branches and commits from the upstream
+      - run: git fetch upstream
 
-          # Merge the branches and commits from the upstream
-          git merge upstream/main --allow-unrelated-histories
+      # Merge the branches and commits from the upstream
+      - run: git merge upstream/main --allow-unrelated-histories
 
-          # helpful for debugging
-          git show-ref
+      # helpful for debugging
+      - run: git show-ref
 
-          git push
+      - run: git push
