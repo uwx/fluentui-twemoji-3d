@@ -26,10 +26,10 @@ for emoji_folder in emoji_folders:
 print(list(emoji_data.values())[0])
 
 variants_export_paths = {
-    '3D': os.path.join(dir, '../export/3D_png/'),
-    'Color': os.path.join(dir, '../export/color_svg/'),
-    'Flat': os.path.join(dir, '../export/flat_svg/'),
-    'High Contrast': os.path.join(dir, '../export/highcontrast_svg/'),
+    '3D': os.path.join(dir, '../export/3D_png/72x72/'),
+    'Color': os.path.join(dir, '../export/color_svg/svg/'),
+    'Flat': os.path.join(dir, '../export/flat_svg/svg/'),
+    'High Contrast': os.path.join(dir, '../export/highcontrast_svg/svg/'),
 }
 
 # Delete previous export first
