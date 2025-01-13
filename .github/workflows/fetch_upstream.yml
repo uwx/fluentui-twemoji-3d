@@ -36,7 +36,7 @@ jobs:
       - run: git fetch upstream
 
       # Merge the branches and commits from the upstream
-      - run: git merge upstream/main --allow-unrelated-histories
+      - run: git merge upstream/main --allow-unrelated-histories -s recursive -Xignore-space-at-eol
 
       # helpful for debugging
       - run: git show-ref
