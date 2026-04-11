@@ -41,4 +41,4 @@ jobs:
 
       - name: Keepalive Workflow
         if: always()
-        uses: gautamkrishnar/keepalive-workflow@v2
+        uses: world-executed/keepalive-workflow@971c146693b24f56f40f26904e7e550cf96b8fce
